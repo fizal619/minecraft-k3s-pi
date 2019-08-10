@@ -1,0 +1,38 @@
+[
+  {
+    "uuid": "f2014cb1-79bb-4dbe-95b1-6bc56a648fbf",
+    "name": "MairyFlowers",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "3e1fb864-f796-4370-989e-45ec613d2215",
+    "name": "BrownSugrSenpai",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "9e5659c3-4259-4133-92bb-9d4b86f02dae",
+    "name": "ParavoidGenesis",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "433d8791-9b14-4b6b-89b4-01cfe887f221",
+    "name": "Nexus2G",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "87020646-e3cc-44c9-84c6-abcd2af6e22c",
+    "name": "Shark_Kamishiro",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "3fc5f19d-1490-45a7-b58b-9aea4faed55c",
+    "name": "LanceDTB",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  }
+]

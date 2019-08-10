@@ -5,7 +5,7 @@
 # Check if server is running
 if ! screen -list | grep -q "minecraft"; then
   echo "Server is not currently running!"
-  exit 1
+  exit 0
 fi
 
 # Stop the server

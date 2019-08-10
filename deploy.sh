@@ -1,3 +1,3 @@
 #!/bin/bash
 ssh $SU@$SH \
-  'cd ~/minecraft; git pull origin master; ./restart.sh'
+  'cd ~/minecraft; git checkout .; git pull origin master; ./restart.sh || :'

@@ -4,7 +4,9 @@
   "description": "These configuration files were meant for a pi server running on a Raspberry Pi 4 4GB.",
   "main": "index.js",
   "scripts": {
-    "test": "exit 0"
+    "test": "exit 0",
+    "start-paper": "java -Xms1G -Xmx1G -XX:+UseG1GC -XX:+UnlockExperimentalVMOptions -XX:MaxGCPauseMillis=100 -XX:+DisableExplicitGC -XX:TargetSurvivorRatio=90 -XX:G1NewSizePercent=50 -XX:G1MaxNewSizePercent=80 -XX:G1MixedGCLiveThresholdPercent=35 -XX:+AlwaysPreTouch -XX:+ParallelRefProcEnabled -Dusing.aikars.flags=mcflags.emc.gs -jar paperclip.jar",
+    "start-dev": "curl --output paperclip.jar -L https://papermc.io/api/v1/paper/1.14.4/166/download && npm run start-paper"
   },
   "repository": {
     "type": "git",

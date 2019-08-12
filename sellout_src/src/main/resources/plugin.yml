@@ -3,3 +3,7 @@ main: me.fizal.sellout.Main
 version: 1.0
 api-version: 1.14
 commands:
+  so:
+    description: save webhook url for discord
+    usage: /so <url with http://>
+

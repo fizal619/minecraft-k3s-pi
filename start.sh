@@ -31,7 +31,7 @@ done
 cd /home/pi/minecraft/
 
 # Back up server
-if [ -d "world" ]; then 
+if [ -d "world" ]; then
     echo "Backing up server (to minecraft/backups folder)"
     tar -pzvcf backups/$(date +%Y.%m.%d.%H.%M.%S).tar.gz world world_nether world_the_end
 fi
@@ -49,7 +49,7 @@ if [ -f "paper.yml" ]; then
     # Paper applies a custom and far more efficient algorithm for explosions. It has no impact on gameplay.
     sed -i "s/optimize-explosions: false/optimize-explosions: true/g" paper.yml
     # mob-spawner-tick-rate
-    # This is the delay (in ticks) before an activated spawner attempts to spawn mobs. Doubling the rate to 2 should have no impact on spawn rates. 
+    # This is the delay (in ticks) before an activated spawner attempts to spawn mobs. Doubling the rate to 2 should have no impact on spawn rates.
     # Only go higher if you have severe load from ticking spawners. Keep below 10.
     sed -i "s/mob-spawner-tick-rate: 1/mob-spawner-tick-rate: 3/g" paper.yml
     # container-update-tick-rate
@@ -68,7 +68,7 @@ if [ -f "paper.yml" ]; then
     # grass-spread-tick
     # The time (in ticks) before the server attempts to spread grass in loaded chunks. This will have minimal gameplay impact on most game types.
     sed -i "s/grass-spread-tick-rate: 1/grass-spread-tick-rate: 3/g" paper.yml
-    # despawn-ranges 
+    # despawn-ranges
     # Soft = The distance (in blocks) from a player where mobs will be periodically removed.
     # Hard = Distance where mobs will be removed instantly.
     sed -i "s/soft: 32/soft: 28/g" paper.yml
@@ -101,7 +101,7 @@ fi
 # Configure bukkit.yml options
 if [ -f "bukkit.yml" ]; then
     # monster-spawns
-    # This dictates how often (in ticks) the server will attempt to spawn a monster in a legal location. Doubling the time between attempts helps performance without hurting spawn rates. 
+    # This dictates how often (in ticks) the server will attempt to spawn a monster in a legal location. Doubling the time between attempts helps performance without hurting spawn rates.
     sed -i "s/monster-spawns: 1/monster-spawns: 2/g" bukkit.yml
     # autosave
     # This enables Bukkit's world saving function and how often it runs (in ticks). It should be 6000 (5 minutes) by default.
@@ -145,11 +145,11 @@ fi
 echo "Updating to most recent paperclip version ..."
 
 # Test internet connectivity first
-wget --spider --quiet https://papermc.io/api/v1/paper/1.14.4/latest/download
+wget --spider --quiet https://papermc.io/api/v1/paper/1.15.1/latest/download
 if [ "$?" != 0 ]; then
     echo "Unable to connect to update website (internet connection may be down).  Skipping update ..."
 else
-    wget -O paperclip.jar https://papermc.io/api/v1/paper/1.14.4/latest/download
+    wget -O paperclip.jar https://papermc.io/api/v1/paper/1.15.1/latest/download
 fi
 
 echo "Starting Minecraft server.  To view window type screen -r minecraft."

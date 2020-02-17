@@ -20,6 +20,6 @@ worlds:
   world:
     x: -80.0
     z: 128.0
-    radiusX: 3000
-    radiusZ: 3000
+    radiusX: 6000
+    radiusZ: 6000
     wrapping: false

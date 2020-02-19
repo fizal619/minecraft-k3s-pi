@@ -34,5 +34,11 @@
     "name": "LanceDTB",
     "level": 4,
     "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "a67da8b9-217c-4907-8b90-93fc09f57424",
+    "name": "TheShaneRobet",
+    "level": 4,
+    "bypassesPlayerLimit": false
   }
 ]

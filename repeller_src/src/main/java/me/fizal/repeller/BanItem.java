@@ -2,14 +2,13 @@ package me.fizal.repeller;
 
 import java.util.ArrayList;
 
+
 public class BanItem {
-  String player;
-  String location;
-  ArrayList<String> bans;
+  public ArrayList<Integer> coords = new ArrayList<Integer>();
+  public ArrayList<String> bans = new ArrayList<String>();
 
-  BanItem(String playerName, String locationCoords, ArrayList<String> banList){
-    location = locationCoords;
-    bans = banList;
+  @Override
+  public String toString() {
+    return String.format("coords: %s, bans: %s", this.coords.toString(), bans.toString());
   }
-
 }

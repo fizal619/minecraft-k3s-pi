@@ -1,0 +1,14 @@
+name: RepellerPlugin
+main: me.fizal.repeller.Main
+version: 1.0
+api-version: 1.14
+commands:
+  save:
+    description: Save the current location as your home
+    usage: /save
+  toggle:
+    description: Ban a player from your home, or allow them if they've been banned
+    usage: /toggle Sadique
+  list:
+    description: List the state of this server.
+    usage: /list

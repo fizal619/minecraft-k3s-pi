@@ -11,3 +11,5 @@ sellout_src/target
 .vscode
 version_history.json
 plugins/SelloutPlugin
+plugins/RepellerPlugin
+node_modules

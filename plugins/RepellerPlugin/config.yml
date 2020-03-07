@@ -1,4 +1,6 @@
 BrownSugrSenpai: !me.fizal.repeller.BanItem
+   bans: 
+   - BrownSugrSenpai
    coords: 
    - -258
    - 86

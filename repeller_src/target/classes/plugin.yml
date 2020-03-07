@@ -6,10 +6,6 @@ commands:
   save:
     description: Save the current location as your home
     usage: /save
-  ban:
-    description: Ban a player from your home
-    usage: /ban @Sadique
-  allow:
-    description: Allow a banned player into your home
-    usage: /allow @Someone
-
+  toggle:
+    description: Ban a player from your home, or allow them if they've been banned
+    usage: /toggle Sadique

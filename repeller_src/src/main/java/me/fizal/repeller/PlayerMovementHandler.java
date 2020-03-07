@@ -47,7 +47,6 @@ public class PlayerMovementHandler implements Listener {
         if (distance <= border) {
           player.teleport(lastLoc);
         }
-        plugin.getServer().broadcastMessage(Double.toString(distance));
       } catch (Exception e) {
         plugin.getLogger().warning("Could not calculate distance.");
       }

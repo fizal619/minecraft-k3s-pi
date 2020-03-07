@@ -2,11 +2,12 @@ package me.fizal.repeller;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
+import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin {
 
-  private Banlist banlist = new Banlist();
+  public Banlist banlist = new Banlist();
 
   @Override
   public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
@@ -21,13 +22,25 @@ public class Main extends JavaPlugin {
       sender.sendMessage(message);
     }
 
+    if (cmd.getName().equalsIgnoreCase("list")) {
+      sender.sendMessage(banlist.toString());
+    }
+
     return true;
+  }
+
+  /**
+   * @return the banlist
+   */
+  public Banlist getBanlist() {
+    return banlist;
   }
 
   @Override
   public void onEnable() {
     this.getLogger().info("Repeller Plugin activated. Tresspassers will be teleported!");
     this.getLogger().info(banlist.toString());
+    getServer().getPluginManager().registerEvents(new PlayerMovementHandler(this), this);
   }
 
   @Override

@@ -5,7 +5,7 @@ import java.util.HashSet;
 
 
 public class BanItem {
-  public ArrayList<Integer> coords = new ArrayList<Integer>();
+  public ArrayList<String> coords = new ArrayList<String>();
   public HashSet<String> bans = new HashSet<String>();
 
   @Override

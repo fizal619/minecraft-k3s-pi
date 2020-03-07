@@ -18,7 +18,14 @@ public class Banlist {
 
   public HashMap<String, BanItem> items;
 
+  private static Banlist instance;
+
+  public static Banlist getInstance() {
+      return instance;
+  }
+
   Banlist() {
+    instance = this;
     try {
       System.out.println("REPELLER ===> attempting to read config.yml");
       YamlReader reader = new YamlReader(new FileReader("plugins/RepellerPlugin/config.yml"));
@@ -40,15 +47,15 @@ public class Banlist {
     BanItem entry;
     if (items.containsKey(name)) {
       entry = items.get(name);
-      entry.coords = new ArrayList<Integer>();
+      entry.coords = new ArrayList<String>();
     } else {
       entry = new BanItem();
     }
 
     Location xyz = plugin.getServer().getPlayer(name).getLocation();
-    entry.coords.add(xyz.getBlockX());
-    entry.coords.add(xyz.getBlockY());
-    entry.coords.add(xyz.getBlockZ());
+    entry.coords.add(Integer.toString(xyz.getBlockX()));
+    entry.coords.add(Integer.toString(xyz.getBlockY()));
+    entry.coords.add(Integer.toString(xyz.getBlockZ()));
     items.put(name, entry);
     return "Saved your current location. Banned people will be repelled!";
   }
@@ -74,6 +81,19 @@ public class Banlist {
     return "That idiot won't bother you no more.";
   }
 
+  public ArrayList<BanItem> check(String name) {
+    ArrayList<BanItem> result = new ArrayList<BanItem>();
+
+    for (Entry item : items.entrySet()) {
+      BanItem value = (BanItem)item.getValue();
+      if (value.bans.contains(name)) {
+        result.add(value);
+      }
+    }
+
+    return result;
+  }
+
   public void save() {
     try {
       YamlWriter writer = new YamlWriter(new FileWriter("plugins/RepellerPlugin/config.yml"));
@@ -94,7 +114,7 @@ public class Banlist {
       String key = (String)item.getKey();
       BanItem value = (BanItem)item.getValue();
       response = response.concat(
-        String.format("\n -> %s: %s \n", key, value)
+        String.format("-> %s: %s \n", key, value)
       );
     }
 

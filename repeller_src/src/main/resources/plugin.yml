@@ -9,3 +9,6 @@ commands:
   toggle:
     description: Ban a player from your home, or allow them if they've been banned
     usage: /toggle Sadique
+  list:
+    description: List the state of this server.
+    usage: /list

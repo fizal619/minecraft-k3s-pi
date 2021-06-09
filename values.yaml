@@ -1,4 +1,3 @@
-
 minecraftServer:
   downloadWorldUrl: "https://dl.minehut.com/ql1At/world.zip"
   nodePort: 30010
@@ -6,6 +5,9 @@ minecraftServer:
   difficulty: hard
   whitelist: MairyFlowers,BrownSugrSenpai,ParavoidGenesis,Nexus2G,Shark_Kamishiro,LanceDTB,TheShaneRobet
   eula: true
+  type: PAPER
+extraEnv:
+  RESOURCE_PACK: https://github.com/fizal619/minecraft-server-pi/blob/master/Sapixcraft%20128x%20MC1.16.zip?raw=true
 
 persistence:
   dataDir:

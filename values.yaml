@@ -1,3 +1,5 @@
+image: itzg/minecraft-server
+imageTag: multiarch-latest
 minecraftServer:
   # Do not change unless replacing world or restoring from backup.
   downloadWorldUrl: "https://dl.minehut.com/ql1At/world.zip"

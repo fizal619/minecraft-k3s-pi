@@ -1,0 +1,13 @@
+
+minecraftServer:
+  downloadWorldUrl: "https://dl.minehut.com/ql1At/world.zip"
+  nodePort: 30010
+  serviceType: NodePort
+  difficulty: hard
+  whitelist: MairyFlowers,BrownSugrSenpai,ParavoidGenesis,Nexus2G,Shark_Kamishiro,LanceDTB,TheShaneRobet
+  eula: true
+
+persistence:
+  dataDir:
+    enabled: true
+

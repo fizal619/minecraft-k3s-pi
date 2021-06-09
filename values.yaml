@@ -11,10 +11,10 @@ minecraftServer:
   whitelist: MairyFlowers,BrownSugrSenpai,ParavoidGenesis,Nexus2G,Shark_Kamishiro,LanceDTB,TheShaneRobet
   eula: true
   type: PAPER
+  ops: BrownSugrSenpai
 extraEnv:
-  RESOURCE_PACK: https://github.com/fizal619/minecraft-k3s-pi/blob/master/resource-pack.zip?raw=true
-  OVERRIDE_SERVER_PROPERTIES: true
-  MOTD: A bamsy lover server
+  RESOURCE_PACK: "https://github.com/fizal619/minecraft-k3s-pi/blob/master/resource-pack.zip?raw=true"
+  MOTD: A bamsy lover server  
 
 persistence:
   dataDir:

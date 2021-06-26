@@ -1,9 +1,5 @@
 image: itzg/minecraft-server
 imageTag: multiarch-latest
-resources:
-  requests: 
-    memory: 2048Mi
-    cpu: 3000m
 minecraftServer:
   # Do not change unless replacing world or restoring from backup.
   downloadWorldUrl: "https://dl.minehut.com/ql1At/world.zip"
@@ -16,8 +12,7 @@ minecraftServer:
   eula: true
   type: PAPER
   ops: BrownSugrSenpai
-  motd: A bamsy lover server 
-  memory: 2048M 
+  motd: A bamsy lover server
 extraEnv:
   RESOURCE_PACK: "https://github.com/fizal619/minecraft-k3s-pi/blob/master/resource-pack.zip?raw=true"
 

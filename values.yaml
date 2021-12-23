@@ -1,5 +1,5 @@
 image: itzg/minecraft-server
-imageTag: multiarch-latest
+imageTag: java17
 minecraftServer:
   nodePort: 30010
   serviceType: NodePort

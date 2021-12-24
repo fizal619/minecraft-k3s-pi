@@ -7,11 +7,11 @@ minecraftServer:
   whitelist: MairyFlowers,BrownSugrSenpai,ParavoidGenesis,Nexus2G,Shark_Kamishiro,LanceDTB,TheShaneRobet
   eula: true
   type: PAPER
-  ops: BrownSugrSenpai
+  ops: BrownSugrSenpai,Nexus2G
   motd: A bamsy lover server
   viewDistance: 5
 extraEnv:
-  #RESOURCE_PACK: "https://github.com/fizal619/minecraft-k3s-pi/blob/master/resource-pack.zip?raw=true"
+  RESOURCE_PACK: "https://sapixcraft.com/downloads/java/files/Sapixcraft%20128x%20MC1.18.zip"
 
 persistence:
   dataDir:

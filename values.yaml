@@ -10,6 +10,7 @@ minecraftServer:
   ops: BrownSugrSenpai,Nexus2G
   motd: A bamsy lover server
   viewDistance: 5
+  spawnProtection: 0
 extraEnv:
   RESOURCE_PACK: "https://sapixcraft.com/downloads/java/files/Sapixcraft%20128x%20MC1.18.zip"
 

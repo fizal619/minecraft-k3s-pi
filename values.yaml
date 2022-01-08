@@ -12,7 +12,7 @@ minecraftServer:
   viewDistance: 5
   spawnProtection: 0
 extraEnv:
-  RESOURCE_PACK: "https://sapixcraft.com/downloads/java/files/Sapixcraft%20128x%20MC1.18.zip"
+  RESOURCE_PACK: "https://sapixcraft.com/downloads/java/files/Sapixcraft%2032x%20MC1.18.zip"
   OVERRIDE_SERVER_PROPERTIES: true
 
 persistence:

@@ -1,4 +1,7 @@
 image: itzg/minecraft-server
+imagePullSecrets: []
+global:
+  imagePullSecrets: []
 imageTag: latest
 minecraftServer:
   nodePort: 30010

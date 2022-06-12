@@ -1,6 +1,7 @@
 image: itzg/minecraft-server
 imageTag: latest
 minecraftServer:
+  version: "LATEST"
   nodePort: 30010
   serviceType: NodePort
   difficulty: hard
